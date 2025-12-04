@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>نمونه‌کارها | محمد دیزاین</title>
+
+<style>
+@font-face {
+  font-family: Vazir;
+  src: url('https://cdn.fontcdn.ir/Fonts/Vazir/Vazir.ttf');
+}
+
+body{
+  margin:0;
+  background:#0c0f14;
+  font-family: Vazir;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* --- NAVBAR --- */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
+  background:rgba(15,20,30,0.8);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid #1c1f26;
+  position:sticky;
+  top:0;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+  background:linear-gradient(90deg,#00d0ff,#008cff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.nav-links{
+  display:flex;
+  gap:25px;
+}
+
+.nav-links a{
+  color:#aaa;
+  text-decoration:none;
+  font-size:17px;
+  position:relative;
+  transition:.3s;
+}
+
+.nav-links a:hover{
+  color:#00baff;
+}
+
+.active{
+  color:#00baff !important;
+}
+
+/* --- Header --- */
+.header{
+  text-align:center;
+  padding:80px 20px;
+}
+
+.header h1{
+  font-size:45px;
+  background:linear-gradient(90deg,#008cff,#00eaff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* --- Projects Grid --- */
+
+.projects{
+  width:85%;
+  margin:20px auto 100px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.project-card{
+  background:#121418;
+  border-radius:12px;
+  padding:25px;
+  border:1px solid #1d1f25;
+  transition:.3s;
+  box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+.project-card:hover{
+  transform:translateY(-7px);
+  box-shadow:0 0 25px rgba(0,150,255,0.25);
+}
+
+.project-card h3{
+  color:#c7e6ff; /* آبی خیلی ملایم، نه نئونی */
+  margin-bottom:10px;
+}
+
+.project-card p{
+  color:#bdbdbd;
+}
+
+.project-card a{
+  display:inline-block;
+  margin-top:10px;
+  padding:8px 18px;
+  color:white;
+  background:linear-gradient(90deg,#008cff,#00eaff);
+  border-radius:6px;
+  text-decoration:none;
+  font-size:15px;
+  transition:.3s;
+}
+
+.project-card a:hover{
+  background:#0b5ed7;
+}
+
+/* --- FOOTER --- */
+footer{
+  margin-top:80px;
+  padding:30px;
+  text-align:center;
+  color:#aaa;
+  border-top:1px solid #1c1f26;
+  background:#0f1116;
+}
+footer span{
+  color:#00baff;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="nav-links">
+    <a href="index.html">خانه</a>
+    <a href="portfolio.html" class="active">نمونه کارها</a>
+    <a href="contact.html">تماس با من</a>
+  </div>
+  <div class="logo">Mohammad Design</div>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>نمونه‌کارهای من</h1>
+  <p>برخی از پروژه‌هایی که طراحی و توسعه داده‌ام</p>
+</div>
+
+<!-- PROJECTS -->
+<div class="projects">
+
+  <div class="project-card">
+    <h3>پروژه 1 — سایت خبری</h3>
+    <p>طراحی رابط کاربری و پیاده‌سازی کامل Front-End</p>
+    <a href="#">مشاهده پروژه</a>
+  </div>
+
+  <div class="project-card">
+    <h3>پروژه 2 — اسکویید گیم</h3>
+    <p>سایت سرگرمی با بخش‌های تعاملی</p>
+    <a href="Squid game 1.html" target="_blank">مشاهده پروژه</a>
+  </div>
+
+  <div class="project-card">
+    <h3>پروژه 3 — مهدی لند</h3>
+    <p>صفحه‌ی شخصی با طراحی خاص و مدرن</p>
+    <a href="mahdi land.html" target="_blank">مشاهده پروژه</a>
+  </div>
+
+  <div class="project-card">
+    <h3>پروژه 4 — کافه مهتاب</h3>
+    <p>معرفی کامل کافه با طراحی ظریف و تیره</p>
+    <a href="کافه.html" target="_blank">مشاهده پروژه</a>
+  </div>
+
+</div>
+
+<footer>
+  ساخته شده با ❤️ توسط <span>محمد دیزاین</span>
+</footer>
+
+</body>
+</html>
